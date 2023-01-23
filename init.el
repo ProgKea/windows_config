@@ -1,3 +1,5 @@
+;; This is my minimal config for working on windows
+
 ;; Startup
 ;; Minimize garbage collection during startup
 (setq gc-cons-threshold most-positive-fixnum)
@@ -168,13 +170,6 @@
   (evil-define-key 'visual 'global "z" #'evil-multiedit-match-and-next)
   (evil-define-key 'visual 'global "Z" #'evil-multiedit-match-and-prev))
 
-;; (use-package yasnippet
-;;   :after evil
-;;   :config
-;;   (setq yas-triggers-in-field nil)
-;;   (setq yas-snippet-dirs '("~/.emacs.snippets/"))
-;;   (yas-global-mode 1))
-
 (use-package magit
   :commands (magit-status magit-get-current-branch)
   :custom
@@ -182,10 +177,6 @@
 
 (use-package projectile
   :init
-  (when (file-directory-p "~/documents")
-    (setq projectile-project-search-path '("~/documents")))
-  (when (file-directory-p "~/code")
-    (setq projectile-project-search-path '("~/code")))
   (projectile-mode 1)
   (evil-define-key 'normal 'global (kbd "C-f") #'projectile-find-file)
   (evil-define-key 'normal 'global (kbd "C-s") #'projectile-switch-project)
@@ -220,27 +211,6 @@
   (global-undo-tree-mode 1)
   :custom
   (undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo"))))
-
-;; (use-package eglot
-;;   :defer 1
-;;   :hook
-;;   ((rust-mode . eglot-ensure)
-;;    (c-mode . eglot-ensure)
-;;    (eglot--managed-mode . (lambda () (flymake-mode -1))))
-;;   :init
-;;   (setq eldoc-echo-area-display-truncation-message t)
-;;   (setq eldoc-echo-area-use-multiline-p nil)
-;;   (setq eglot-ignored-server-capabilities '(:documentHighlightProvider :hoverProvider :colorProvider))
-;;   :config
-;;   (evil-define-key 'normal 'global (kbd "<down>") #'flymake-goto-next-error)
-;;   (evil-define-key 'normal 'global (kbd "<up>") #'flymake-goto-prev-error)
-;;   (evil-define-key 'normal 'global (kbd "<leader>r") #'eglot-rename)
-;;   (evil-define-key 'normal 'global (kbd "gm") #'eglot-find-implementation)
-;;   (evil-define-key 'normal 'global (kbd "<leader>f") #'eglot-format-buffer)
-;;   (evil-define-key 'normal 'global (kbd "gr") #'xref-find-references)
-;;   (evil-define-key 'normal 'global (kbd "gd") #'xref-find-definitions)
-;;   (evil-define-key 'normal 'global (kbd "ga") #'eglot-code-actions)
-;;   (evil-define-key 'normal 'global (kbd "gh") #'eldoc-doc-buffer))
 
 (use-package corfu
   :after yasnippet
@@ -318,8 +288,12 @@
   (shell-command "touch .projectile")
   (projectile-add-known-project default-directory))
 
-(use-package gruber-darker-theme
-  :config
-  (load-theme 'gruber-darker t))
+;; (use-package gruber-darker-theme
+;;   :config
+;;   (load-theme 'gruber-darker t))
 
-(set-frame-font "Consolas-13" nil t)
+(use-package zenburn-theme
+  :config
+  (load-theme 'zenburn t))
+
+(set-frame-font "Consolas-14" nil t)
