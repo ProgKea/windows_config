@@ -1,0 +1,5 @@
+;;; -*- lisp-data -*-
+(("/home/keanu/.ansible_dotfiles_installer/")
+ ("/home/keanu/code/puzzler/")
+ ("/home/keanu/code/game_of_life/")
+ ("/home/keanu/code/game_of_life/third_party/include/gs/"))

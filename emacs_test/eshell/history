@@ -1,0 +1,128 @@
+sudo emerge -a wireplumber
+ls /usr/bin
+sudo emerge -W pulseaudio wireplumber
+sudo emerge -ac
+pavucontrol
+equery u discord-bin
+equery u pipewire
+equery u alsa
+equery u alsa
+qlist -I
+emerge -s alsa
+qlist -I
+equery u alsa-utils
+aplay --list-devices
+hst
+clear
+emerge -s manim
+pip install manim
+ls
+ps aux 
+manimce --help
+manim render --help
+manimce render --help
+manimce --help
+manimce --version
+pip install --user neurokit2
+havsx
+ls
+sxiv ~/wallhaven
+sxiv ~/wallhaven/*
+emerge -s python
+emerge -s pyright
+pip install --user pyright
+pip uninstall pyright
+npm install -g pyright
+sudo npm install -g pyright
+pyright
+npm uninstall -g pyright
+sudo !!
+sudo npm uninstall -g pyright
+python --version
+pip install --user pyright
+ls
+manimce main.py -qh
+ls
+cd media
+ls
+cd videos
+ls
+cd main
+ls
+cd 1080p60/ls
+ffmpeg -i "concat:Intro.mp4|Sozialversicherungen.mp4|SampleAnimation.mp4" -codec copy Beispiel_Video.mp
+ffmpeg -i "concat:Intro.mp4|Sozialversicherungen.mp4|SampleAnimation.mp4" -codec copy Beispiel_Video.mp4
+ls
+mpv Beispiel_Video.mp4
+ls
+rm Beispiel_Video.mp4
+ls
+Makefile  gol  main.c  readme.mdls
+clear
+cd 
+ls
+ls
+cat .gitignore 
+cat .gitignore | xargs -I% git rm --cached %
+cat .gitignore | tr -d'/' -f2 | xargs -I% git rm --cached %
+cat .gitignore | xargs -I% git rm --cached %
+cat .gitignore | xargs -I% git rm -r --cached %
+equery u obs-studio
+emerge -s fira
+sudo emerge -a fira-code discord-bin
+trans :en "programmier stand"
+equery u obs-studio
+sudo emerge -a obs-studio
+sudo emerge -W obs-studio
+sudo emerge -c
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:0 output.mkv
+ls
+cd Downloads
+ls
+clera
+clear
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pipewire-ac 2 -i hw:0 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pulse -ac 2 -i default output.mkv
+emerge -s kazam
+emerge -s simplescreenrecorder
+equery u simplescreenrecorder
+ffmpeg -list_devices true -f dshow -i dummy
+pactl
+ffmpeg -f x11grab -s 1920x1080 -i :0.0+1920,0 -f alsa -i hw:2 out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -f alsa -i hw:2 out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -i hw:2 out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -f alsa -i hw:2 out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -f alsa -i hw:2 out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -f alsa -i hw:2 out.mkv 
+equery u ffmpeg
+ffmpeg -f x11grab -s 1920x1080 -f jack -i hw:2 out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -f pulse -i hw:2 out.mkv
+ffmpeg -f x11grab -s 1920x1080 -f pipe -i hw:2 out.mkv
+ffmpeg
+ffmpeg -h
+ffmpeg -f x11grab -s 1920x1080 -f alsa out.mkv 
+ffmpeg -f x11grab -s 1920x1080 -f alsa -o out.mkv 
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pipewire-ac 2 -i hw:0 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pipewire-ac 2 -i hw:2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pipewire-ac 2 -i file:hw:2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pipewire-ac 2 -i dev:hw:2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f pipewire-ac 2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:0 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:2,0 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -i hw:2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:2 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:0 output.mkv
+ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:0 output.mkv
+ls
+pkg-config --cflags --libs
+pkg-config --cflags --libs raylib
+pkg-config --cflags --libs lraylib
+pkg-config --
+pkg-config 
+pkg-config --help
+pkg-config --list-all
+emerge -s raylib
